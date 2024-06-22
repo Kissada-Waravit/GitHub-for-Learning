@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill out this form to help us improve our services.</p>
+    </header>
+    
+    <form id="survey-form">
+        <div class="form-group">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="number" id="number-label">Age (optional):</label>
+            <input type="number" id="number" name="age" min="10" max="100" placeholder="Age">
+        </div>
+        
+        <div class="form-group">
+            <label for="dropdown">Select your role:</label>
+            <select id="dropdown" name="role">
+                <option value="student">Student</option>
+                <option value="full-time job">Full-time job</option>
+                <option value="part-time job">Part-time job</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <p>Preferred coding languages:</p>
+            <label><input type="checkbox" name="language" value="JavaScript"> JavaScript</label>
+            <label><input type="checkbox" name="language" value="Python"> Python</label>
+            <label><input type="checkbox" name="language" value="Java"> Java</label>
+        </div>
+        
+        <div class="form-group">
+            <p>Experience level:</p>
+            <label><input type="radio" name="experience" value="beginner"> Beginner</label>
+            <label><input type="radio" name="experience" value="intermediate"> Intermediate</label>
+            <label><input type="radio" name="experience" value="advanced"> Advanced</label>
+        </div>
+        
+        <div class="form-group">
+            <label for="comments">Additional comments:</label>
+            <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+        </div>
+        
+        <div class="form-group">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
