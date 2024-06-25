@@ -25,3 +25,16 @@
     text-align: center;
     margin: 20px 0;
   }
+
+  #image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  #img-caption {
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 10px;
+  }
